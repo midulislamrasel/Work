@@ -12,6 +12,7 @@
   --color_05: #f0f3f4;
   --color_yellow: #efc11a;
 }
+
 .containers {
   width: 1440px;
   margin: 0 auto;
@@ -76,6 +77,11 @@ option {
   width: 25px;
   height: 20px;
 }
+.btn-group > .btn:first-child {
+  margin-left: 0;
+  padding: 10px 27px;
+}
+
 .input_fild_color {
   background-color: rgb(172, 45, 45) o;
 }
@@ -108,12 +114,32 @@ option {
   color: var(--color_05);
   transition: 0.6s ease;
 }
+p.position-absolute.top-50.start-50.translate-middle.text-white.fw-medium.fs-1.d-flex.text-center {
+  line-height: 1;
+  font-size: 8px !important;
+}
+/* ============ =================*/
+@media (min-width: 375px) {
+  p.position-absolute.top-50.start-50.translate-middle.text-white.fw-medium.fs-1.d-flex.text-center {
+    line-height: 1;
+    font-size: 20px !important;
+  }
+}
 
 @media (min-width: 768px) {
   .navbar__menu {
     display: flex;
   }
-
+  .pricing_card1 {
+    height: 500px;
+    padding: 30px;
+    /* width: 400px; */
+  }
+  .pricing_card3 {
+    height: 530px;
+    padding: 30px;
+    margin-top: -5px;
+  }
   .menu_itme a {
     display: block;
     margin: 0px;
@@ -130,6 +156,10 @@ option {
 }
 
 @media (min-width: 992px) {
+  p.position-absolute.top-50.start-50.translate-middle.text-white.fw-medium.fs-1.d-flex.text-center {
+    line-height: 1;
+    font-size: 50px !important;
+  }
   .menu_itme a {
     display: inline;
     margin-left: 10px;
@@ -145,6 +175,10 @@ option {
 }
 
 @media (min-width: 1200px) {
+  p.position-absolute.top-50.start-50.translate-middle.text-white.fw-medium.fs-1.d-flex.text-center {
+    line-height: 1;
+    font-size: 50px !important;
+  }
   .menu_itme a {
     margin-left: 7px;
     font-size: 16px;
@@ -172,7 +206,6 @@ option {
 }
 .banner__pera {
   color: var(--color_white);
-
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
