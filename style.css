@@ -12,7 +12,6 @@
   --color_05: #f0f3f4;
   --color_yellow: #efc11a;
 }
-
 .containers {
   width: 1440px;
   margin: 0 auto;
@@ -77,11 +76,6 @@ option {
   width: 25px;
   height: 20px;
 }
-.btn-group > .btn:first-child {
-  margin-left: 0;
-  padding: 10px 27px;
-}
-
 .input_fild_color {
   background-color: rgb(172, 45, 45) o;
 }
@@ -114,18 +108,13 @@ option {
   color: var(--color_05);
   transition: 0.6s ease;
 }
-p.position-absolute.top-50.start-50.translate-middle.text-white.fw-medium.fs-1.d-flex.text-center {
-  line-height: 1;
-  font-size: 8px !important;
-}
-/* ============ =================*/
+/* ====================================== */
 @media (min-width: 375px) {
   p.position-absolute.top-50.start-50.translate-middle.text-white.fw-medium.fs-1.d-flex.text-center {
     line-height: 1;
     font-size: 20px !important;
   }
 }
-
 @media (min-width: 768px) {
   .navbar__menu {
     display: flex;

@@ -11,20 +11,6 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="style.css" />
-    <!-- ========= -->
-    <link
-      rel="stylesheet"
-      href="//cdn.tutorialjinni.com/twitter-bootstrap/3.3.7/css/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="//cdn.tutorialjinni.com/bootstrap-select/1.12.4/css/bootstrap-select.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="//g.tutorialjinni.com/mojoaxel/bootstrap-select-country/dist/css/bootstrap-select-country.min.css"
-    />
-    <!-- ======== -->
   </head>
   <body>
     <div style="background-color: #0d4050">
@@ -60,7 +46,7 @@
               ><img src="/Images/logo (1).png" alt=""
             /></a>
             <button
-              class="navbar-toggler general bg-secondary"
+              class="navbar-toggler bg-success"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#navbarText"
@@ -71,34 +57,28 @@
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="navbar__menu collapse navbar-collapse" id="navbarText">
-              <div class="d-flex align-items-center">
-                <ul
-                  class="navbar-nav d-flex align-items-center me-auto mb-2 mb-lg-0"
-                >
-                  <li class="nav-item">
-                    <a
-                      class="me-2 nav-link active text-white"
-                      aria-current="page"
-                      href="#"
-                      >Personal</a
-                    >
-                  </li>
-                  <li class="nav-item">
-                    <button class="navbar__button">Features</button>
-                  </li>
-                </ul>
-                <span class="navbar-text">
-                  <div class="text-info menu_itme">
-                    <a href="#">Certified </a>
-                    <a href="#">Professional </a>
-                    <a href="#">Languages</a>
-                    <a href="#">Documents</a>
-                    <button class="navbar__button2">
-                      Check Prices & Order
-                    </button>
-                  </div>
-                </span>
-              </div>
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active text-white"
+                    aria-current="page"
+                    href="#"
+                    >Personal</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <button class="navbar__button">Features</button>
+                </li>
+              </ul>
+              <span class="navbar-text">
+                <div class="text-info menu_itme">
+                  <a href="#">Certified Translation</a>
+                  <a href="#">Professional Translations</a>
+                  <a href="#">Languages</a>
+                  <a href="#">Documents</a>
+                  <button class="navbar__button2">Check Prices & Order</button>
+                </div>
+              </span>
             </div>
           </div>
         </nav>
@@ -166,15 +146,23 @@
             <div class="bg-white rounded-4 border-0 p-4">
               <div class="">
                 <h4 class="text-center">Check Prices & Place Order</h4>
-                <div class="mb-3 d-flex justify-content-between rounded-4">
-                  <select
-                    class="selectpicker countrypicker"
-                    data-flag="true"
-                  ></select>
-                  <select
-                    class="ps-3 selectpicker countrypicker"
-                    data-flag="true"
-                  ></select>
+                <div class="d-flex justify-content-between rounded-4">
+                  <select class="fille__uplode" id="">
+                    <div value="volvo" class="p-4">
+                      <img src="/Images/Image-44.png" alt=".." />
+                    </div>
+                    <option value="saab" class="p-4">Saab</option>
+                    <option value="opel" class="p-4">Opel</option>
+                    <option value="audi" class="p-4">Audi</option>
+                  </select>
+                  <select class="fille__uplode" id="">
+                    <option value="volvo" class="p-4">
+                      <img src="/Images/Image-44.png" alt=".." />
+                    </option>
+                    <option value="saab" class="p-4">Saab</option>
+                    <option value="opel" class="p-4">Opel</option>
+                    <option value="audi" class="p-4">Audi</option>
+                  </select>
                 </div>
                 <!-- ======= -->
                 <div
@@ -205,17 +193,15 @@
                 <div
                   class="border d-flex justify-content-between align-items-center ps-3 border-primary mb-2 rounded-4 border border-secondary"
                 >
-                  <div class="d-flex align-items-center pt-2">
-                    <div class="mb-1">
-                      <input
-                        type="radio"
-                        id="html"
-                        name="fav_language"
-                        value="HTML"
-                        class="me-1 redio_button"
-                      />
-                    </div>
-                    <label for="html  ">Standard Professional </label>
+                  <div class="d-flex align-items-center">
+                    <input
+                      type="radio"
+                      id="html"
+                      name="fav_language"
+                      value="HTML"
+                      class="me-1 redio_button"
+                    />
+                    <label for="html">Standard Professional </label>
                   </div>
                   <p
                     class="input_fild_color text-white bg-secondary py-3 m-0 float-end rounded-end-4 border px-2"
@@ -224,20 +210,16 @@
                   </p>
                 </div>
                 <div
-                  class="border pb-2 py-3 d-flex ps-3 border-primary mb-2 rounded-4 border border-secondary"
+                  class="border py-3 d-flex ps-3 border-primary mb-2 rounded-4 border border-secondary"
                 >
-                  <div class="pb-1">
-                    <input
-                      type="radio"
-                      id="html"
-                      name="fav_language"
-                      value="HTML"
-                      class="me-1 redio_button"
-                    />
-                  </div>
-                  <label for="html" class="mr-2 mt-1"
-                    >Enter Cerification type</label
-                  >
+                  <input
+                    type="radio"
+                    id="html"
+                    name="fav_language"
+                    value="HTML"
+                    class="me-1 redio_button"
+                  />
+                  <label for="html" class="mr-2">Enter Cerification type</label>
                 </div>
                 <div
                   class="border d-flex justify-content-between align-items-center ps-3 border-primary mb-2 rounded-4 border border-secondary"
@@ -250,9 +232,7 @@
                       value="HTML"
                       class="me-1 redio_button"
                     />
-                    <label for="html" class="mt-2"
-                      >Enter Cerification type</label
-                    >
+                    <label for="html">Enter Cerification type</label>
                   </div>
                   <p
                     class="input_fild_color text-white bg-secondary py-3 m-0 float-end rounded-end-4 border px-2"
@@ -269,18 +249,23 @@
                   >
                     <input
                       type="radio"
-                      id=""
+                      id="html"
                       name="fav_language"
-                      value=""
+                      value="HTML"
                       class="me-1"
                     />
-                    <label for="" class="mt-2">48 hrs </label>
+                    <label for="html">48 hrs </label>
                   </div>
                   <div
                     class="d-flex justify-content-between align-items-center border ps-3 border-primary rounded-3 border-secondary"
                   >
-                    <input type="radio" id="" name="fav_language" value="" />
-                    <label for=" " class="me-1 ms-1 mt-3">48 hrs </label>
+                    <input
+                      type="radio"
+                      id="html"
+                      name="fav_language"
+                      value="HTML"
+                    />
+                    <label for="html " class="me-1 ms-1">48 hrs </label>
                     <label
                       class="input_fild_color text-white bg-secondary m-0 float-end rounded-end-3 border py-3 px-3"
                     >
@@ -296,7 +281,7 @@
                       name="fav_language"
                       value="HTML"
                     />
-                    <label for="html " class="me-1 ms-1 mt-3">48 hrs </label>
+                    <label for="html " class="me-1 ms-1">48 hrs </label>
                     <label
                       class="input_fild_color text-white bg-secondary m-0 float-end rounded-end-3 border py-3 px-3"
                     >
@@ -346,7 +331,6 @@
         </p>
       </div>
     </div>
-    <!-- ========= -->
 
     <!-- =======================card====================================== -->
     <div class="card__section nav_banner">
@@ -523,9 +507,5 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
-    <script src="//cdn.tutorialjinni.com/jquery/3.6.1/jquery.min.js"></script>
-    <script src="//cdn.tutorialjinni.com/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="//cdn.tutorialjinni.com/bootstrap-select/1.12.4/js/bootstrap-select.min.js"></script>
-    <script src="//g.tutorialjinni.com/mojoaxel/bootstrap-select-country/dist/js/bootstrap-select-country.min.js"></script>
   </body>
 </html>
